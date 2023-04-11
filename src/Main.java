@@ -29,7 +29,7 @@ public class Main {
         tweets.stream().forEach(tweet ->{
                     Matcher matcher = hashtagPattern.matcher(tweet);
                     while (matcher.find()) {
-                        keywords.add(matcher.group(1));
+                        keywords.add(matcher.group());
                     }
                 });
 
